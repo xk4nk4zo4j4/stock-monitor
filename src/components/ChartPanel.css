@@ -1,0 +1,119 @@
+.chart-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.chart-empty {
+  align-items: center;
+  justify-content: center;
+  color: var(--text3);
+  font-size: 14px;
+}
+
+.cp-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 16px 24px 12px;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+  gap: 16px;
+}
+
+.cp-info { display: flex; flex-direction: column; gap: 6px; }
+
+.cp-top {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.cp-ticker {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+.cp-name {
+  font-size: 14px;
+  color: var(--text2);
+}
+
+.cp-ext-tag {
+  font-size: 11px;
+}
+
+.cp-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.cp-price {
+  font-size: 36px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  font-variant-numeric: tabular-nums;
+}
+
+.cp-change {
+  font-size: 16px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+.cp-ma-toggles {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-top: 4px;
+}
+
+.ma-btn {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  color: var(--text3);
+  background: var(--bg1);
+  transition: all 0.15s;
+  letter-spacing: 0.3px;
+}
+
+.ma-btn:hover { background: var(--bg2); }
+.ma-btn.on { background: transparent; }
+
+.cp-ma-values {
+  display: flex;
+  gap: 20px;
+  padding: 8px 24px;
+  flex-shrink: 0;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg1);
+}
+
+.ma-val {
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  transition: color 0.2s;
+}
+
+.cp-chart {
+  flex: 1;
+  min-height: 0;
+}
+
+.cp-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 24px;
+  font-size: 11px;
+  color: var(--text3);
+  border-top: 1px solid var(--border);
+  flex-shrink: 0;
+}

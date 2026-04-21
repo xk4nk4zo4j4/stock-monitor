@@ -1,0 +1,92 @@
+.watchlist {
+  width: 240px;
+  flex-shrink: 0;
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.wl-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text2);
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.wl-count {
+  background: var(--bg3);
+  color: var(--text2);
+  font-size: 11px;
+  padding: 2px 7px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.wl-items {
+  overflow-y: auto;
+  flex: 1;
+}
+
+.wl-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.1s;
+}
+
+.wl-item:hover { background: var(--bg2); }
+.wl-item.active { background: var(--bg2); }
+
+.wl-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.wl-ticker {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.wl-name {
+  font-size: 11px;
+  color: var(--text2);
+}
+
+.wl-ext-label {
+  font-size: 10px;
+  color: var(--orange);
+  margin-top: 1px;
+}
+
+.wl-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.wl-price {
+  font-size: 14px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+.wl-badge {
+  font-size: 11px;
+  font-weight: 600;
+  color: #000;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-variant-numeric: tabular-nums;
+}
